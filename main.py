@@ -40,6 +40,7 @@ def simulate(item_name_list,overall_results=[],subplot_titles=[]):
     title=''
     for item in item_name_list:
         title+=f'+{item}'
+    title+=f" (total golds: {sum([item.cost for item in sardoche.items])})"
     subplot_titles.append(title[1:])
     return
 
